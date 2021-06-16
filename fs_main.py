@@ -1,3 +1,5 @@
+import getopt
+import sys
 from file_signature_dict import file_signature_dict
 
 
@@ -30,15 +32,38 @@ def find_signature_in_dict(dictionary, file_header):
 
     return dictionary[file_signature_found]
 
-# Define the filename
-filename = "work.docx"
 
-# There's no point getting more of the 512 byte header than needed.
-# To do this we find the largest header in the file signature dictionary and use that as the block size.
+short_opts = "hf:b:"
+
+long_opts = ["help","file=","block_size="]
+
+argument_list = sys.argv[1:]
+
+# Block size is automatically set to the largest one in the file signature dictionary unless changed.
 dependent_block_size = len(max(file_signature_dict, key=len))
 
-# Gets the header by opening the file and converting/spliting hex --> strings
-header = get_file_signature_from_directory(filename, block_size=dependent_block_size)
+filename = None
 
+try:
+    arguments, values = getopt.getopt(argument_list, short_opts, long_opts)
+
+except getopt.error as error:
+    sys.exit(f"{error}\n")
+
+for argument, value in arguments:
+
+    if argument in ("-h", "--help"):
+        print("\n--Help Menu--\n")
+
+    elif argument in ("-f", "file="):
+        filename = str(value)
+
+    elif argument in ("-b", "block_size="):
+        dependent_block_size = int(value)
+
+if not filename:
+    sys.exit("File Signature Match Failed - No File Provided - Try Using -f [filename]")
+
+header = get_file_signature_from_directory(filename, block_size=dependent_block_size)
 
 find_signature_in_dict(dictionary=file_signature_dict, file_header=header)
