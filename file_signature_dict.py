@@ -308,6 +308,7 @@ file_signature_dict = {
     '73 72 63 64 6F 63 69 64': [('CAL', 'CALS raster bitmap')],
     '73 7A 65 7A': [('PDB', 'PowerBASIC Debugger Symbols')],
     '74 42 4D 50 4B 6E 57 72': [('PRC', 'PathWay Map file')],
+    '74 68 69 73 20 69 73': [('FILE', 'Windows Extension for Unknown Format')],
     '75 73 74 61 72': [('TAR', 'Tape Archive')],
     '76 32 30 30 33 2E 31 30': [('FLT', 'Qimage filter')],
     '77 69 64 65': [('MOV', 'QuickTime movie_4')],
