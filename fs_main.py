@@ -34,12 +34,13 @@ def find_signature_in_dict(dictionary, file_header):
         return dictionary[file_signature_found]
 
     except KeyError:
-        sys.exit("Unable To Find Matching File Signature - Please Submit Your File Signature to the Discord for Manual Inspection")
+        sys.exit("Unable To Find Matching File Signature -"
+                 " Please Submit Your File Signature to the Discord for Manual Inspection")
 
 
 short_opts = "hf:b:"
 
-long_opts = ["help","file=","block_size="]
+long_opts = ["help", "file=", "block_size="]
 
 argument_list = sys.argv[1:]
 

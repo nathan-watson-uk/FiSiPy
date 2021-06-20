@@ -3,17 +3,15 @@
 FiSiPy (File Signature Python) is a tool used to check the file type of a file using file signatures (magic numbers).
 
 # File Breakdown:
-fs_main.py -
+FiSiPy.py -
 
-Contains the basic functions to read file headers and detect file type. Also with an example of usage.
+Contains the basic functions to read file headers and detect file type.
 
 file_signature_dict.py -
 
 A large Python dictionary containing 350+ unique file signatures and their associated file types.
 
 # Upcoming Features
-
-- Command Line Support
 - More File Signatures
 
 # Requirements
