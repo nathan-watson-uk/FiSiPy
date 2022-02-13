@@ -21,7 +21,7 @@ Python 3.4 +
 
 # Example
 
-    SiFiPy.py -f ""C:\\Users\\Nate\\Files\\TestFile.docx
+    SiFiPy.py -f "C:\\Users\\Nate\\Files\\TestFile.docx"
 
 # Usage
 

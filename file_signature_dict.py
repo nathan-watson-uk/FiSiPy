@@ -416,7 +416,7 @@ FiSiPy is a Python tool used to determine file type by using file signatures (ma
 
 Example:
 
-    SiFiPy.py -f ""C:\\Users\\Nate\\Files\\TestFile.docx
+    SiFiPy.py -f "C:\\Users\\Nate\\Files\\TestFile.docx"
 
 Usage:
 
