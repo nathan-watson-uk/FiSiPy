@@ -60,7 +60,7 @@ def main():
 
     for argument, value in arguments:
         if argument in ("-h", "--help"):
-            print("\n--Help Menu--\n")
+            print(f"\n{help_menu_text}\n")
 
         elif argument in ("-f", "file="):
             filename = str(value)
@@ -74,8 +74,6 @@ def main():
     header = get_file_signature_from_directory(filename, block_size=dependent_block_size)
 
     find_signature_in_dict(dictionary=file_signature_dict, file_header=header)
-
-    time.sleep(5)
 
 
 if __name__ == "__main__":

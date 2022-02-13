@@ -399,4 +399,33 @@ file_signature_dict = {
 }
 
 
+help_menu_text = """
+-------------------------------------
 
+
+  ______ _    _____ _   _____       
+ |  ____(_)  / ____(_) |  __ \      
+ | |__   _  | (___  _  | |__) |   _ 
+ |  __| | |  \___ \| | |  ___/ | | |
+ | |    | |  ____) | | | |   | |_| |
+ |_|    |_| |_____/|_| |_|    \__, |
+                               __/ |
+                              |___/ 
+
+FiSiPy is a Python tool used to determine file type by using file signatures (magic numbers).
+
+Example:
+
+    SiFiPy.py -f ""C:\\Users\\Nate\\Files\\TestFile.docx
+
+Usage:
+
+    -f | file=
+        Used to specify the directory to the file. 
+
+    --b, block_size=
+        Used to increase the scope/size of file signature. (Not necessary to change, it is automatically calculated)
+
+
+-------------------------------------
+"""
