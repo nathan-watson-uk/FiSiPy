@@ -21,7 +21,7 @@ Python 3.4 +
 
 # Example
 
-    SiFiPy.py -f "C:\\Users\\Nate\\Files\\TestFile.docx"
+    SiFiPy.py -f "C:\\Users\\John\\Files\\TestFile.docx"
 
 # Usage
 
@@ -30,9 +30,3 @@ Python 3.4 +
 
     --b, block_size=
         Used to increase the scope/size of file signature. (Not necessary to change, it is automatically calculated)
-
-# Discord
-
-To ask questions, keep up with development and join our community:
-
-* [Join The Discord Server]([Discord Server](https://discord.gg/wz9X6pTrZm).)
